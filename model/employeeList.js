@@ -6,12 +6,11 @@ const EmployeeSchema = mongoose.Schema({
         required: true
     },
     location: {
-        type: String,
-        required: true
+        type: String
+        
     },
     position: {
-        type: String,
-        required: true
+        type: String
     },
     salary: {
         type: Number,

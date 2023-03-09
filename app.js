@@ -15,13 +15,13 @@ app.use(express.static(path.join(__dirname+'/dist/FrontEnd')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Task2: create mongoDB connection 
+// Task1: create mongoDB connection 
 
 
-//Task 2 : write api with error handling and appropriate api mentioned in the TODO below
+
 mongoose.connect('mongodb+srv://amalashraf04:aamssanamm1234@cluster0.sc2qvv5.mongodb.net/employee?retryWrites=true&w=majority', { useNewUrlParser: true });
 
-
+//Task 2 : write api with error handling and appropriate api mentioned in the TODO below
 //TODO: get data from db  using api '/api/employeelist'
 
 app.get('/api/employeelist', async (req, res) => {
